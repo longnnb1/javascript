@@ -1,5 +1,5 @@
 // object literal
-var user = {
+let user = {
     firstname: 'firstname',
     lastname: 'lastname',
     showName: function () {
@@ -17,7 +17,7 @@ function User(firstname, lastname) {
 
 }
 
-var longnnb = new User('Long', 'Nguyen')
+let longnnb = new User('Long', 'Nguyen')
 longnnb.showName()
 
 // prototype
@@ -26,13 +26,12 @@ User.prototype.sayHello = function(){
     console.log('Hello there! My name is ' + this.firstname)
 }
 
-var bill = new User('Bill', 'Gates')
+let bill = new User('Bill', 'Gates')
 bill.sayHello()
 
 longnnb.sayHello()
 
 // Object.create
-var longnnb1 = Object.create(longnnb)
+let longnnb1 = Object.create(longnnb)
 longnnb1.showName()
-
 

@@ -5,8 +5,8 @@ Template literals are a new way of defining strings by using backticks ` instead
 
 const string = `This is a template literal`
 
-const first_name = 'Kyle'
-console.log(`Hello ${first_name}`) // Hello Kyle
+const first_name = 'Long'
+console.log(`Hello ${first_name}`) // Hello Long
 
 // code between ${} will be executed as js code
 const a = 2

@@ -21,16 +21,16 @@ function custom2(strings) {
     // ["My name is", "and I love", ""]
 }
 
-const name = 'Kyle'
-const hobby = 'weight lifting'
+const name = 'Long'
+const hobby = 'playing guitar'
 custom2`My name is ${name} and I love ${hobby}`
 
 // The rest of the parameters to the function correspond with each of the ${} expressions in the order they appear in the template.
 function custom3(strings, name, hobby) {
     console.log(name)
-    // Kyle
+    // Long
     console.log(hobby)
-    // weight lifting
+    // playing guitar
 }
 
 custom3`My name is ${name} and I love ${hobby}`
@@ -38,7 +38,7 @@ custom3`My name is ${name} and I love ${hobby}`
 // Many times you will not know how many ${} expressions a string will have, so you can use the rest operator to group all the ${} expressions into one array.
 function custom4(strings, ...values) {
     console.log(values)
-    // ["Kyle", "weight lifting"]
+    // ["Long", "playing guitar"]
 }
 
 custom4`My name is ${name} and I love ${hobby}`
@@ -51,7 +51,7 @@ function custom5(strings, ...values) {
 }
 
 console.log(custom5`My name is ${name} and I love ${hobby}`)
-// My name is Kyle and I love weight lifting
+// My name is Long and I love playing guitar
 
 // One thing we could do is bold all values from ${} expressions since we have access to each value inside the values array.
 
@@ -62,7 +62,7 @@ function bold(strings, ...values) {
 }
 
 console.log(bold`My name is ${name} and I love ${hobby}`)
-// My name is <b>Kyle</b> and I love <b>weight lifting</b>
+// My name is <b>Long</b> and I love <b>playing guitar</b>
 
 // Removing Newlines From Multiline Strings
 function oneLine(strings, ...values) {
